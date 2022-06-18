@@ -1,0 +1,30 @@
+.hero-text-conatainer {
+    margin-top: 26.4rem;
+    margin-left: 50rem;
+    height: 20rem;
+    width: 35rem;
+    background-color: white;
+    position: relative;
+}
+
+.hero-text-content {
+    padding: 1rem;
+}
+
+.word {
+    color: blue;
+}
+
+.info-container {
+    padding: 2em 7em 0em 0em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.phone-info {
+    display: flex;
+}
+
+.phone-number {
+    padding: .3rem;
+}
