@@ -1,3 +1,12 @@
 body {
     font-family: sans-serif;
 }
+
+.images-app {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-app > img {
+    width: 50%;
+}

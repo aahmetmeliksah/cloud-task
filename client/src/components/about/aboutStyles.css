@@ -1,0 +1,37 @@
+.about-container {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.experience {
+    height: 20rem;
+    width: 20rem;
+    background-color: white;
+    box-shadow: 0px 0px 2rem 0.1rem rgba(0, 0, 0, 0.22);
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: .9;
+}
+
+.experience > p {
+    color: #717275;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#twelve {
+    color: #247cff;
+    font-size: 7rem;
+}
+
+.about-dr {
+    width: 50%;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    color: #717275;
+}
