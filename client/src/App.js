@@ -1,12 +1,17 @@
-import React from 'react';
-import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+import React from 'react'
+
+import './style.css'
+// components
+import Header from './components/common/header/Header'
+import HeroComponent from './components/hero/HeroComponent';
 
 function App() {
   return (
-    <Container>
-       <Typography variant='h5'>This is APP Component</Typography>
-    </Container>
+    <>
+      <Header />
+      <HeroComponent />
+    </>
   );
 }
 
-export default App;
+export default App
