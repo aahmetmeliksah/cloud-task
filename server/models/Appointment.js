@@ -12,15 +12,14 @@ const AppointmentSchema = new Schema({
         default: false
     },
 
-    date: {
-        type: Date,
-        required: true
-    },
-
     hour: {
         type: String,
         required: true
-    }
+    },
+
+    unavaliableHours: [
+        {date: Date, hours:{ type: [String]}}
+    ]
 },
     { timestamps: true }
 );

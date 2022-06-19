@@ -26,6 +26,13 @@ const UserSchema = new Schema({
         default: "patient",
     },
 
+    workingHours: [
+        { type: Number, default: 10 },
+        { type: Number, default: 13 },
+        { type: Number, default: 14 },
+        { type: Number, default: 19 }
+    ],
+
     appointments: [
         {
             type: mongoose.Schema.Types.ObjectId,

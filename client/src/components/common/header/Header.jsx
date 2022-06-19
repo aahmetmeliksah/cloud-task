@@ -27,7 +27,7 @@ function Header() {
                     {
                         isMatch ? (
                             <>
-                                <Typography className={classes.title}>
+                                <Typography className={classes.title}> 
                                     Medic Care
                                 </Typography>
                                 <DrawerComponent />
