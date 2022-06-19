@@ -1,10 +1,23 @@
-import express  from 'express';
+import express from "express"
+const router = express.Router();
 
-// Controllers
-import { getAppointments } from '../controllers/appointments.js'
+// controllers
+import { 
+    createAppointment,
+    updateAppointment,
+    removeAppointment,
+    getAppointment,
+    getAppointments
+ } from "../controllers/appointments.js"
 
-const router = express.Router()
+// middlewares
+import { roleMiddlewareForCreatingAppointment } from "../middlewares/roleMiddleware.js"
 
-router.route('/').get(getAppointments)
+// routes
+router.route("/create-appointment").post(roleMiddlewareForCreatingAppointment(["admin", "doctor"]), createAppointment); // create appointment // only doctors and admin can do this
+router.route("/:id").post(updateAppointment); // update appointment
+router.route("/:id").delete(removeAppointment); // remove an appointment
+router.route("/:id").get(getAppointment); // get an appointment
+router.route("/").get(getAppointments); // get appointments
 
-export default router;
+export default router
