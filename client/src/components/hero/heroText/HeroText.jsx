@@ -44,7 +44,7 @@ function HeroText() {
 
                     <div className="info-container">
 
-                        <button>Learn More</button>
+                        <button className='heroBtn'>Learn More</button>
 
                         <div className="phone-info">
                             <PhoneIphoneIcon /> <span className='phone-number'>010-020-0340</span>

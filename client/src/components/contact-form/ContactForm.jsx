@@ -1,13 +1,26 @@
 import React from 'react'
+import { useMediaQuery, useTheme } from '@material-ui/core'
+
 import "./contactform-styles.css"
 
 function ContactForm() {
- 
-
+    const theme = useTheme()
+    const isMatch = useMediaQuery(theme.breakpoints.down('md'))
 
     return (
         <div id='booking'>
-            <h1 style={{marginLeft: "30rem", marginTop: "15rem"}}>Book an Appointment</h1>
+            {
+                isMatch ? (
+                    <>
+                                {null}
+                            </>
+                ) : (
+                    <>
+                    <h1 id='book-appointment-title' style={{marginLeft: "30rem", marginTop: "15rem"}}>Book an Appointment</h1>
+                    </>
+                )
+            }
+            
             <div className='container'>
                 <div className="contact-box">
                     <div className="right">

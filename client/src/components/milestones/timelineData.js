@@ -17,7 +17,7 @@ export const timelineData = [
     },
     {
         text: 'Phasellus eleifend, urna interdum congue viverra, arcu neque ultrices ligula, id pulvinar nisi nibh et lacus. Vivamus gravida, ipsum non euismod tincidunt, sapien elit fermentum mi, quis iaculis enim ligula at arcu.',
-        date: 'March 07 2019',
+        date: '08-08-2008',
         category: {
 			tag: 'Congenital disorders',
 			color: 'black'
@@ -26,7 +26,7 @@ export const timelineData = [
     {
         text:
             'I published my first article in the FreeCodeCamp Medium Publication',
-        date: 'March 18 2019',
+        date: '12-12-2012',
         category: {
 			tag: 'Mental health',
 			color: 'black'
@@ -34,7 +34,7 @@ export const timelineData = [
     },
     {
         text: 'Fusce vestibulum euismod nulla sed ultrices. Praesent rutrum nulla vel sapien euismod, quis tempus dui placerat.Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla',
-        date: 'April 05 2019',
+        date: '09-12-2022',
         category: {
 			tag: 'Infection',
 			color: 'black'

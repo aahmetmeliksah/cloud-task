@@ -10,3 +10,15 @@ body {
 .images-app > img {
     width: 50%;
 }
+
+@media screen and (max-width:966px) {
+  .images-app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .images-app > img {
+    margin: 1rem !important;
+    margin-left: 7rem !important; 
+ }
+}

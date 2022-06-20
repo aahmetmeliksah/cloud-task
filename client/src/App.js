@@ -9,6 +9,7 @@ import About from './components/about/About'
 import Timeline from './components/milestones/Timeline'
 import Testimonials from "./components/testimonials/CrouselComp.jsx"
 import ContactForm from './components/contact-form/ContactForm';
+import Footer from './components/footer/Footer';
 
 import img1 from "./images/female-doctor-with-presenting-hand-gesture.jpg"
 import img2 from "./images/medium-shot-man-getting-vaccine.jpg"
@@ -28,6 +29,8 @@ function App() {
       <Timeline />
       {/* <Testimonials />  */}
       <ContactForm />
+      <Footer />
+      
     </Container>
   );
 }

@@ -28,3 +28,29 @@
 .phone-number {
     padding: .3rem;
 }
+
+.heroBtn {
+    padding: .7em;
+    border-radius: .5em;
+    background-color: blue;
+    color: white;
+    border: none;
+    transition: .5s;
+}
+
+.heroBtn:hover {
+    background-color: rgba(28, 28, 221, 0.434);
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1000px) {
+    .hero-text-conatainer {
+        margin-top: 46.4rem;
+        margin-right: 500px;
+        height: 21rem;
+        width: 40rem;
+        background-color: white;
+        position: relative;
+    }
+}

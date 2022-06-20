@@ -35,3 +35,21 @@
     letter-spacing: 0.5px;
     color: #717275;
 }
+
+@media screen and (max-width:966px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-dr {
+        margin-left: em;
+        width: 90%;
+        margin-top: .3rem;
+        margin-bottom: 3rem;
+    }
+
+    .experience {
+        margin: auto;
+    }
+}

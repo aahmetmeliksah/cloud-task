@@ -6,7 +6,7 @@ import HeroText from './heroText/HeroText'
  
 function HeroComponent() {
   return (
-    <div>
+    <div id='/'>
        <ImageSlider slides={imagePaths}/>
        <HeroText />
     </div>

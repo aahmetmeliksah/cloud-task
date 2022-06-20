@@ -5,7 +5,6 @@ import {
     Toolbar,
     Tabs,
     Tab,
-    Button,
     Typography,
     useMediaQuery,
     useTheme
@@ -23,7 +22,7 @@ function Header() {
     const isMatch = useMediaQuery(theme.breakpoints.down('md'))
 
     return (
-        <>
+        <div>
 
             <AppBar className={classes.headerContainer}>
 
@@ -88,7 +87,7 @@ function Header() {
 
             </AppBar>
 
-        </ >
+        </div>
     )
 }
 

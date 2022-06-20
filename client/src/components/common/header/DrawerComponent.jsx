@@ -11,11 +11,12 @@ import {
 } from '@material-ui/core'
 
 import MenuOpenIcon from '@material-ui/icons/MenuOpen'
+import { Link } from "react-scroll"
 
 import useStyles from './styles'
 
 // PAGES
-const PAGES = ["Home", "About", "Timeline", "Testimonials", "Booking", "Contact"]
+const PAGES = ["home", "about", "timeline", "testimonials", "cooking", "contact"]
 
 function DrawerComponent() {
     const [openDrawer, setOpenDrawer] = useState(false)
@@ -31,7 +32,9 @@ function DrawerComponent() {
                     {
                         PAGES.map((page, i) => (
                             <ListItem button>
-                                <ListItemText key={i} primary={page} />
+                                <Link to={PAGES[i]} smooth={true} duration={1000} >
+                                    <ListItemText key={i} primary={page} />
+                                </Link>
                                 <Divider />
                             </ListItem>
                         ))

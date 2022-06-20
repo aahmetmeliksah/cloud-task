@@ -11,7 +11,7 @@ import {
  } from "../controllers/appointments.js"
 
 // middlewares
-import { roleMiddlewareForCreatingAppointment } from "../middlewares/roleMiddleware.js"
+// import { roleMiddlewareForCreatingAppointment } from "../middlewares/roleMiddleware.js"
 
 // routes
 router.route("/create-appointment").post(roleMiddlewareForCreatingAppointment(["admin", "doctor"]), createAppointment); // create appointment // only doctors and admin can do this
