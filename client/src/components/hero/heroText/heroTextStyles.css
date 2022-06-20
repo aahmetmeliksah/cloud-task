@@ -44,13 +44,20 @@
     font-weight: bold;
 }
 
-@media screen and (max-width:1000px) {
+/* iphone SE */
+@media screen and (max-width:556px) { 
     .hero-text-conatainer {
-        margin-top: 46.4rem;
-        margin-right: 500px;
+        margin-top: 43.4rem;
+        margin-right: 656px;
         height: 21rem;
-        width: 40rem;
+        width: 20rem;
         background-color: white;
         position: relative;
+    }
+
+    .info-container {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
     }
 }

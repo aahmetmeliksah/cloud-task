@@ -36,17 +36,22 @@
     color: #717275;
 }
 
-@media screen and (max-width:966px) {
+@media screen and (max-width:556px) {
     .about-container {
         display: flex;
         flex-direction: column;
     }
 
     .about-dr {
-        margin-left: em;
+        margin-left: 4em;
         width: 90%;
         margin-top: .3rem;
         margin-bottom: 3rem;
+    }
+
+    .about-dr > p {
+        width: 25%;
+        margin-left: 33rem;
     }
 
     .experience {

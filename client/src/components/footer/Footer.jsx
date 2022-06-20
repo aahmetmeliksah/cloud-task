@@ -1,51 +1,57 @@
 import React from 'react'
-import { Container, Grid, Box } from "@material-ui/core"
-import TwitterIcon from '@material-ui/icons/Twitter'
-import FacebookIcon from '@material-ui/icons/Facebook'
-import InstagramIcon from '@material-ui/icons/Instagram'
-import SubscriptionsIcon from '@material-ui/icons/Subscriptions'
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
-import useStyles from './footerStyles.js'
 
+import "./footerStyles.css"
 function Footer() {
-    const classes = useStyles()
 
     return (
-        <footer className={classes.footerContainer} id="contact">
+        <footer className="footer-container" id="contact">
+            <div className="workdays">
+                <h4>Opening Hours</h4>
 
-  
-        <Grid container spacing={5}>
-
-
-            <Grid item xs={12} sm={4}>
-                <Box sx={{ p: 3, borderBottom: '1px solid grey', display:"flex" }}>Opening Hours</Box>
-                <Box sx={{ p: 3,  display:"flex" }}>Monday, Tuesday - Firday 8:00 AM - 3:30 PM</Box>
-                <Box sx={{ p: 3,  display:"flex" }}>Saturday 10:30 AM - 5:30 PM</Box>
-            </Grid>
-
-            <Grid item xs={12} sm={4}>
-                <Box sx={{ p: 3, borderBottom: '1px solid grey', display:"flex" }}>Our Clinic</Box>
-                <Box sx={{ p: 3,  display:"flex" }}>hello@company.com</Box>
-                <Box sx={{ p: 3,  display:"flex" }}>123 Digital Art Street, San Diego, CA 92123</Box>
-            </Grid>
-
-            <Grid item xs={12} sm={4}>
-                <Box sx={{ p: 3, borderBottom: '1px solid grey', display: "flex" }}>Socials</Box>
-                <div className="icons" style={{display: "flex", justifyContent:"space-evenly", marginTop: "1rem"}}>
-                    <TwitterIcon/>
-                    <FacebookIcon/>
-                    <InstagramIcon/>
-                    <SubscriptionsIcon/>
+                <div className="workday-item">
+                    <p>Sunday : Closed</p>
+                    <p></p>
                 </div>
-                <Box sx={{ p: 3,  display:"flex" }}>Copyright © Medic Care 2021</Box>
-                <Box sx={{ p: 3,  display:"flex" }}>Design: TemplateMo</Box>
-                <Box sx={{ p: 3,  display:"flex" }}>Distributed By: Themewagon</Box>
-            </Grid>
 
-        </Grid>
-   
+                <div className="workday-item">
+                    <p>Monday, Tuesday - Firday</p>
+                    <p>8:30 AM - 3:30 PM</p>
+                </div>
 
-                
+                <div className="workday-item">
+                    <p>Saturday</p>
+                    <p>10:30 AM - 5:30 PM</p>
+                </div>
+            </div>
+            {/* workdays end */}
+
+
+            <div className="email-and-address">
+            <h4>Our Clinic</h4>
+                <p>hello@company.co</p>
+
+                <p style={{width: "6rem"}}>123 Digital Art Street, San Diego, CA 92123</p>
+            </div>
+            {/* email-and-address end */}
+
+            <div className="socials">
+                <div className="social-media-icons">
+                <FacebookIcon />
+                <YouTubeIcon />
+                <TwitterIcon />
+                <InstagramIcon />
+                </div>
+
+                <p>Copyright © Medic Care 2021</p>
+                <p>Design: TemplateMo</p>
+                <p>Distributed By: Themewagon</p>
+            </div>
+
         </footer>
     )
 }

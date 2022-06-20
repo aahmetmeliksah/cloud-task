@@ -11,14 +11,17 @@ body {
     width: 50%;
 }
 
-@media screen and (max-width:966px) {
+@media screen and (max-width:556px) {
   .images-app {
     display: flex;
     flex-direction: column;
+    margin-left: 25rem;
+    padding: 4rem;
   }
 
   .images-app > img {
     margin: 1rem !important;
     margin-left: 7rem !important; 
+    width: 42%;
  }
 }

@@ -78,8 +78,14 @@ background-color: rgba(0, 0, 0, 0.2);
     background-color: aqua;
 }
 
-@media screen and (max-width: 880px) {
+/* iPhone SE */
+@media screen and (max-width: 566px) {
     .contact-box{
-        grid-template-columns: 1fr;
+        max-width: 20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }

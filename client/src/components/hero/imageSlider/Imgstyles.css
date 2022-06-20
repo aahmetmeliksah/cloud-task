@@ -28,15 +28,11 @@
     height: 39.4rem;
 }
 
+/* iPhone SE */
 @media screen and (max-width:566px) {
-    /* body {
-        background-color: red;
-    } */
-
-
     .image {
         margin-left: 3.5rem !important;
-        width: 5rem;
+        width: 6rem;
         height: 2rem;
     }
 }

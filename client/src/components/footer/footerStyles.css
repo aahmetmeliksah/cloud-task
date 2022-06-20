@@ -1,0 +1,53 @@
+.footer-container {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   background-color: white;
+   padding-bottom: 3rem;
+}
+
+.footer-container  p {
+    color: #717275;
+}
+
+.footer-container h4 {
+    color: black;
+}
+
+.workdays {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.workday-item{
+  display: flex;
+  width: 25rem;
+  justify-content: space-between;    
+  border-bottom: solid .5px gray;
+}
+
+.email-and-address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* iPhone SE */
+@media screen and (max-width: 566px) {
+    .footer-container {
+     display: flex;
+     flex-direction: column;
+     margin-left: 40rem;
+     padding: 1rem;
+     }
+}
