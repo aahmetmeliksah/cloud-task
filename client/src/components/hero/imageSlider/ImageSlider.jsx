@@ -5,7 +5,7 @@ import "./Imgstyles.css"
 
 function ImageSlider() {
     const [currentImg, setCurrentImg] = useState(0)
-    let slideInterval;
+    let slideInterval
 
     
     const nextImage = () => {

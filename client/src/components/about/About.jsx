@@ -4,7 +4,7 @@ import "./aboutStyles.css"
 
 function About() {
     return (
-        <section className='about-container'>
+        <section className='about-container' id='about'>
           
           <div className="about-dr">
             <h2 style={{color: "black"}}>Meet Dr. Carson</h2>
